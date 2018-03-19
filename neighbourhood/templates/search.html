@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block content %}
+{{block.super}}
+    <h2>Business</h2>
+    {% for business in businesses%}
+      <p>Name:{{business.business_name}}</p>
+      <p>Email:{{business.business_email_address}}</p>
+    {% endfor %}
+ <br>
+{% endblock %}

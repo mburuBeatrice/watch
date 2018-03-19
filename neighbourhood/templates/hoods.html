@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block content %}
+{{block.super}}
+<h2>Hoods</h2>
+{% for hoods in hoods%}
+
+<a href="/hood_deets/{{user.id}}">
+
+        <p>Name:{{hoods.neighbourhood_name }}</p>
+
+</a>
+
+</br>
+{%endfor%}
+{% endblock %}

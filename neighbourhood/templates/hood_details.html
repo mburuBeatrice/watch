@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block content %}
+{{block.super}}
+<h2>Hoods</h2>
+
+<p>Name:{{hood.neighbourhood_name }}</p>
+<p>Location:{{hood.neighbourhood_location}}</p>
+<p>Occupants:{{hood.occupation_count}}</p> 
+</br>
+{% endblock %}

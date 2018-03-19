@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block content %}
+{{block.super}}
+<section>
+    <h2>Posts</h2>
+    {% for post in posts%}
+  
+      <p>User:{{post.user}}</p>
+      <p>My neighbourhood: {{post.post}}</p>
+    {% endfor %}
+    <br>
+</section>
+
+{% endblock %}

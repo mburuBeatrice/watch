@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block content %}
+{{block.super}}
+
+<h4>User</h4>
+<p>Name:{{new_profile.name}}</p>
+<p>Neighbourhood:{{new_profile.neighbourhood}}</p>
+<p>Email_address:{{new_profile.email_address}}</p> 
+
+{% endblock %}
